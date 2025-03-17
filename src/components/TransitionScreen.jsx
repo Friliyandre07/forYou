@@ -5,41 +5,29 @@ const TransitionScreen = ({ onTransitionEnd }) => {
   const [showHi, setShowHi] = useState(false);
 
   useEffect(() => {
-    const staircaseTimer = setTimeout(() => {
+    const fadeInTimer = setTimeout(() => {
       setShowHi(true);
-    }, 2000);
+    }, 1500);
 
-    const transitionTimer = setTimeout(() => {
+    const fadeOutTimer = setTimeout(() => {
       setIsVisible(false);
       onTransitionEnd();
-    }, 5000);
+    }, 7000);
 
     return () => {
-      clearTimeout(staircaseTimer);
-      clearTimeout(transitionTimer);
+      clearTimeout(fadeInTimer);
+      clearTimeout(fadeOutTimer);
     };
   }, [onTransitionEnd]);
 
   return (
     <>
       {isVisible && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
-          <div style={styles.staircaseAnimation}>
-            <div style={{ ...styles.step, ...styles.step1 }}></div>
-            <div style={{ ...styles.step, ...styles.step2 }}></div>
-            <div style={{ ...styles.step, ...styles.step3 }}></div>
-            <div style={{ ...styles.step, ...styles.step4 }}></div>
-            <div style={{ ...styles.step, ...styles.step5 }}></div>
-          </div>
-
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black transition-fade">
           {showHi && (
-            <div className="absolute top-1/2 left-1/2 font-mono text-white text-3xl">
-              Loading
-              <span className="loading-dots">
-                <span className="dot">.</span>
-                <span className="dot">.</span>
-                <span className="dot">.</span>
-              </span>
+            <div className="fade-in text-white font-cinzel-deco font-light text-center text-5xl">
+              Mission 01: Completed <br/>
+              ADICARA
             </div>
           )}
         </div>
@@ -47,73 +35,44 @@ const TransitionScreen = ({ onTransitionEnd }) => {
 
       <style>
         {`
-          @keyframes moveIn {
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: scale(0.95);
+            }
             to {
-              left: 0;
-            }
-          }
-
-          @keyframes blink {
-            0%, 20% {
-              opacity: 0;
-            }
-            25%, 75% {
               opacity: 1;
-            }
-            100% {
-              opacity: 0;
+              transform: scale(1);
             }
           }
 
-          .loading-dots .dot:nth-child(1) {
-            animation: blink 1.5s infinite 0.1s;
+          @keyframes fadeOut {
+            from {
+              opacity: 1;
+              transform: scale(1);
+            }
+            to {
+              opacity: 0;
+              background-color: transparent;
+            }
           }
-          .loading-dots .dot:nth-child(2) {
-            animation: blink 1.5s infinite 0.3s;
+          body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
           }
-          .loading-dots .dot:nth-child(3) {
-            animation: blink 1.5s infinite 0.5s;
+
+          .transition-fade {
+            animation: fadeOut 1s ease-out 6s forwards;
+          }
+
+          .fade-in {
+            animation: fadeIn 1s ease-in;
           }
         `}
       </style>
     </>
   );
-};
-
-const styles = {
-  staircaseAnimation: {
-    position: "relative",
-    width: "100%",
-    height: "100%",
-  },
-  step: {
-    position: "absolute",
-    backgroundColor: "black",
-    width: "100%",
-    height: "20%",
-    left: "100%",
-    animation: "moveIn 0.6s forwards",
-  },
-  step1: {
-    top: "0",
-    animationDelay: "0.1s",
-  },
-  step2: {
-    top: "20%",
-    animationDelay: "0.3s",
-  },
-  step3: {
-    top: "40%",
-    animationDelay: "0.5s",
-  },
-  step4: {
-    top: "60%",
-    animationDelay: "0.7s",
-  },
-  step5: {
-    top: "80%",
-    animationDelay: "0.9s",
-  },
 };
 
 export default TransitionScreen;

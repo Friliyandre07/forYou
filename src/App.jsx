@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FireworksEffect from "./components/FireworksEffect";
 import TransitionScreen from "./components/TransitionScreen";
 import MainContent from "./components/MainContent";
 import ExperienceSection from "./components/ExperienceSection";
@@ -17,14 +18,18 @@ const App = () => {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased bg-black no-scrollbar">
       {!hasTransitionEnded && <TransitionScreen onTransitionEnd={handleTransitionEnd} />}
+      
       {hasTransitionEnded && (
         <>
+          <FireworksEffect />  {/* ✅ Add Fireworks Effect Here */}
+
           <div
             className={`fixed inset-0 h-full w-full transition-opacity duration-1000 ${fadeIn ? "opacity-100" : "opacity-0"}`}
             style={{
-              background: "linear-gradient(180deg, #000 50%, #eea033 150%)",
+              background: "linear-gradient(180deg, #000 50%, #f6a6bb 150%)",
             }}
           ></div>
+
           <div
             className={`relative z-10 container mx-auto px-8 transition-opacity duration-1000 ${fadeIn ? "opacity-100" : "opacity-0"}`}
           >

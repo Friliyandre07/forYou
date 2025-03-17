@@ -28,7 +28,7 @@ const ProjectMarquee = () => {
         animate="animate"
       >
         {Array(10)
-          .fill("PROJECTS")
+          .fill("SEMANGAT YAAAA!!!")
           .map((text, index) => (
             <span key={index} className="mr-4 sm:mr-8">
               {text}

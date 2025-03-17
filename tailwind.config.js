@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
         'playfair': ['Playfair Display, serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'cinzel': ['Cinzel', 'serif'],
+        'cinzel-deco': ['Cinzel Decorative', 'cursive'],
       },
     },
   },

@@ -45,12 +45,12 @@ const Projects = () => {
       {/* Stars background */}
       <StarsBackground />
 
-      <h2 className="my-16 text-center text-6xl sm:text-6xl font-playfair text-yellow-600 overflow-hidden">
-        PROJECTS
+      <h2 className="my-16 text-center text-6xl sm:text-6xl font-playfair text-pink-400 overflow-hidden">
+        MIAUW
         <ProjectMarquee />
       </h2>
 
-      <div>
+      {/* <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-col lg:flex-row lg:justify-center">
             <div
@@ -73,8 +73,8 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
-      <Contact />
+      </div> */}
+      {/* <Contact /> */}
     </div>
   );
 };

@@ -3,42 +3,44 @@ import project2 from "../assets/project-2.jpg";
 import project3 from "../assets/project-3.jpg";
 import project4 from "../assets/project-5.jpg";
 
+import certificate1 from "../assets/phei_certificate1.jpg";
+
+import gambar1 from "../assets/adicara.jpg";
+import gambar2 from "../assets/garucana.jpg";
+import gambar3 from "../assets/cakrawala.jpg";
+
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `Dedicate myself in building responsive, user-friendly websites and applications. (Laravel & React JS)
-
-With a focus on front-end and back-end development, I am always interested in exploring new technologies to create efficient, scalable solutions and passionate about turning ideas into functional, high-performing website. My goal is to deliver seamless user experiences through well-crafted code and innovative design.
-
-In addition to technical expertise, I've honed strong communication and leadership skills through various experiences. As an easy-going individual, I value collaboration and teamwork, which allows me to connect with others and guide projects smoothly. Committed to continuous improvement, I strive to drive successful outcomes in every project undertaken.`;
+export const ABOUT_PHEI = [
+  {
+    name: 'Phei In',
+    mission: '1/3',
+    jabatan: 'Supervisi Mr. & Ms. UMN 2025',
+  }
+];
 
 export const EXPERIENCES = [
   {
-    year: "January 2024 - Present",
-    role: "Full Stack Developer",
-    company: "Mr. & Ms. UMN 2024",
-    description: `Led a team in developing and maintaining web applications using Laravel. It operates using MySQL database and can handle registration for committee registration, candidate, and can handle ticket purchases.`,
-    technologies: ["Laravel", "TailwindCSS", "Javascript", "MySQL"],
+    image: gambar1,
+    role: "ADICARA",
+    company: "Grand Opening Mr. & Ms. UMN 2025",
+    description: `Grand Opening merupakan kegiatan pembuka dari seluruh rangkaian kegiatan Mr. & Ms. UMN 2025 yang sekaligus juga menjadi awal pembukaan pendaftaran bagi mahasiswa yang ingin menjadi calon kandidate Mr. & Ms. UMN 2025. ⭐️✨`,
+    technologies: ["PelitaAdikara", "LeadTheLightGuardingLegacy", "MrMsUMN2025"],
+    certificate: certificate1,
   },
   {
-    year: "November 2023 - December 2023",
-    role: "Full Stack Developer",
-    company: "Rhapsodie Music Space",
-    description: `Collaborating on making full stack website (Laravel Framework) for a business owner where people can book a private room or music space to learn about music.`,
-    technologies: ["Laravel", "CSS", "MySQL", "Figma", "Javascript"],
+    image: gambar2,
+    role: "GARUCANA",
+    company: "Talent Night Mr. & Ms. UMN 2025",
+    description: `Talent Night adalah saat yang paling ditunggu-tunggu!, di acara ini, para Kandidat bakal menunjukkan bakat luar biasa mereka di depan seluruh audiens yang pastinya penuh semangat!. Dari sini, para Kandidat terbaik akan terpilih untuk melanjutkan perjalanan mereka menuju panggung besar Mr. & Ms. UMN 2025 🌟.`,
+    technologies: ["PelitaAdikara", "LeadTheLightGuardingLegacy", "MrMsUMN2025"],
   },
   {
-    year: "September 2023 - September 2023",
-    role: "Full Stack Developer",
-    company: "To Do List Project",
-    description: `A to do list project that can record tasks that are about to be done, on progress, or done. All statuses will be entered into the database and if a task is completed, it will be moved to the "Completed Tasks" table.`,
-    technologies: ["PHP", "Javascript", "CSS", "MySQL"],
-  },
-  {
-    year: "September 2024",
-    role: "Front End Developer",
-    company: "Website Portfolio Personal Project",
-    description: `Developing a personal website portfolio`,
-    technologies: ["React JS", "TailwindCSS"],
+    image: gambar3,
+    role: "CAKRAWALA",
+    company: "Awarding Night Mr. & Ms. UMN 2025",
+    description: `Awarding Night adalah malam penuh kemegahan yang akan menjadi puncak dari seluruh perjalanan Mr. & Ms. UMN 2025. Ini adalah saat yang ditunggu-tunggu, di mana para Calon Finalist yang luar biasa akan dinobatkan dan menerima gelar bergengsi mereka sebagai Mr. & Ms. UMN 2025! 👑✨.`,
+    technologies: ["PelitaAdikara", "LeadTheLightGuardingLegacy", "MrMsUMN2025"],
   },
 ];
 
