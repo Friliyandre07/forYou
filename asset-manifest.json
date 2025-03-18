@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/phei-app/static/css/main.bfb5d959.css",
-    "main.js": "/phei-app/static/js/main.01c4f733.js",
-    "static/js/453.e7720137.chunk.js": "/phei-app/static/js/453.e7720137.chunk.js",
-    "static/media/soundtrack.mp3": "/phei-app/static/media/soundtrack.3b1c50a2b97fde1d2779.mp3",
-    "static/media/phei_certificate1.jpg": "/phei-app/static/media/phei_certificate1.b4a4c22f5d4807b6c915.jpg",
-    "static/media/project-5.jpg": "/phei-app/static/media/project-5.c5a8a8994c3f6a835c43.jpg",
-    "static/media/garucana.jpg": "/phei-app/static/media/garucana.216f65bfcaeb04a62927.jpg",
-    "static/media/cakrawala.jpg": "/phei-app/static/media/cakrawala.95de9f2cd42ff267d568.jpg",
-    "static/media/adicara.jpg": "/phei-app/static/media/adicara.537c09d3db031d78b0d9.jpg",
-    "static/media/project-1.jpg": "/phei-app/static/media/project-1.bcc7e26c955c34641864.jpg",
-    "static/media/profPict.jpg": "/phei-app/static/media/profPict.2e75a39632558573cbdd.jpg",
-    "static/media/Logo.webp": "/phei-app/static/media/Logo.97a247d70498374c4099.webp",
-    "static/media/project-2.jpg": "/phei-app/static/media/project-2.d00cbd9fb6c2a971438f.jpg",
-    "static/media/project-3.jpg": "/phei-app/static/media/project-3.0c1083513a962bd926db.jpg",
-    "index.html": "/phei-app/index.html",
-    "main.bfb5d959.css.map": "/phei-app/static/css/main.bfb5d959.css.map",
-    "main.01c4f733.js.map": "/phei-app/static/js/main.01c4f733.js.map",
-    "453.e7720137.chunk.js.map": "/phei-app/static/js/453.e7720137.chunk.js.map"
+    "main.css": "/forYou/static/css/main.bfb5d959.css",
+    "main.js": "/forYou/static/js/main.abbb65aa.js",
+    "static/js/453.e7720137.chunk.js": "/forYou/static/js/453.e7720137.chunk.js",
+    "static/media/soundtrack.mp3": "/forYou/static/media/soundtrack.3b1c50a2b97fde1d2779.mp3",
+    "static/media/phei_certificate1.jpg": "/forYou/static/media/phei_certificate1.b4a4c22f5d4807b6c915.jpg",
+    "static/media/project-5.jpg": "/forYou/static/media/project-5.c5a8a8994c3f6a835c43.jpg",
+    "static/media/garucana.jpg": "/forYou/static/media/garucana.216f65bfcaeb04a62927.jpg",
+    "static/media/cakrawala.jpg": "/forYou/static/media/cakrawala.95de9f2cd42ff267d568.jpg",
+    "static/media/adicara.jpg": "/forYou/static/media/adicara.537c09d3db031d78b0d9.jpg",
+    "static/media/project-1.jpg": "/forYou/static/media/project-1.bcc7e26c955c34641864.jpg",
+    "static/media/profPict.jpg": "/forYou/static/media/profPict.2e75a39632558573cbdd.jpg",
+    "static/media/Logo.webp": "/forYou/static/media/Logo.97a247d70498374c4099.webp",
+    "static/media/project-2.jpg": "/forYou/static/media/project-2.d00cbd9fb6c2a971438f.jpg",
+    "static/media/project-3.jpg": "/forYou/static/media/project-3.0c1083513a962bd926db.jpg",
+    "index.html": "/forYou/index.html",
+    "main.bfb5d959.css.map": "/forYou/static/css/main.bfb5d959.css.map",
+    "main.abbb65aa.js.map": "/forYou/static/js/main.abbb65aa.js.map",
+    "453.e7720137.chunk.js.map": "/forYou/static/js/453.e7720137.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfb5d959.css",
-    "static/js/main.01c4f733.js"
+    "static/js/main.abbb65aa.js"
   ]
 }
