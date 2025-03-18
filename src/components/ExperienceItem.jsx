@@ -32,9 +32,8 @@ const ExperienceItem = ({ experience, index }) => {
 
   return (
     <div
-      className={`mb-16 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start space-y-6 lg:space-y-0 lg:space-x-10 ${
-        isFaded ? "opacity-100 grayscale" : ""
-      }`}
+      className={`mb-16 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start space-y-6 lg:space-y-0 lg:space-x-10 ${isFaded ? "opacity-100 grayscale" : ""
+        }`}
     >
       <motion.div
         className="w-full lg:w-1/3 flex justify-center lg:justify-start pl-6 lg:pl-36"
@@ -57,9 +56,8 @@ const ExperienceItem = ({ experience, index }) => {
           transition={{ duration: 0.8, delay: index * 0.2 + 0.1 }}
         >
           <h6
-            className={`text-xl lg:text-2xl font-bold font-cinzel-deco ${
-              isFaded ? "text-neutral-500" : "text-white"
-            }`}
+            className={`text-xl lg:text-2xl font-bold font-cinzel-deco ${isFaded ? "text-neutral-500" : "text-white"
+              }`}
           >
             {experience.role}
           </h6>
@@ -87,9 +85,8 @@ const ExperienceItem = ({ experience, index }) => {
 
         <motion.p
           ref={companyRef}
-          className={`text-md lg:text-lg font-semibold mb-3 ${
-            isFaded ? "text-neutral-500" : "text-pink-400"
-          }`}
+          className={`text-md lg:text-lg font-semibold mb-3 ${isFaded ? "text-neutral-500" : "text-pink-400"
+            }`}
           initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
           animate={companyInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: index * 0.2 + 0.2 }}
@@ -98,9 +95,8 @@ const ExperienceItem = ({ experience, index }) => {
         </motion.p>
 
         <p
-          className={`text-sm sm:text-md leading-relaxed ${
-            isFaded ? "text-neutral-500" : "text-neutral-300"
-          }`}
+          className={`text-sm sm:text-md leading-relaxed ${isFaded ? "text-neutral-500" : "text-neutral-300"
+            }`}
           ref={descriptionRef}
         >
           {experience.description.split(" ").map((word, idx) => (
@@ -120,9 +116,8 @@ const ExperienceItem = ({ experience, index }) => {
           {experience.technologies.map((tech, idx) => (
             <motion.span
               key={idx}
-              className={`mr-2 mb-2 rounded px-3 py-1 text-xs sm:text-sm font-medium ${
-                isFaded ? "bg-neutral-800 text-neutral-500" : "bg-neutral-900 text-[#E5E5E5]"
-              }`}
+              className={`mr-2 mb-2 rounded px-3 py-1 text-xs sm:text-sm font-medium ${isFaded ? "bg-neutral-800 text-neutral-500" : "bg-neutral-900 text-[#E5E5E5]"
+                }`}
             >
               {tech}
             </motion.span>
@@ -131,14 +126,18 @@ const ExperienceItem = ({ experience, index }) => {
 
         <div className="mt-6 flex justify-center lg:justify-start">
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleDownload}
-            className="px-6 py-3 text-lg font-semibold text-white border-2 border-pink-500 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-900"
+            whileHover={index === 0 ? { scale: 1.05 } : {}}
+            whileTap={index === 0 ? { scale: 0.95 } : {}}
+            onClick={index === 0 ? handleDownload : undefined}
+            disabled={index !== 0}
+            className={`px-6 py-3 text-lg font-semibold text-white border-2 border-pink-500 rounded-lg transition-all duration-300 
+      ${index === 0 ? "hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-900" : "opacity-50 cursor-not-allowed"}
+    `}
           >
             Download Certificate
           </motion.button>
         </div>
+
       </div>
     </div>
   );

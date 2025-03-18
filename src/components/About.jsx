@@ -34,6 +34,13 @@ const About = () => {
                         className="w-[250px] sm:w-[300px] lg:w-[300px] rounded-lg shadow-lg"
                     />
                 </div>
+                <div className="w-full lg:w-1/2 absolute left-60 bottom-24 -z-10" data-aos="fade-right" data-aos-duration="1200">
+                    <img
+                        src={pheiImage}
+                        alt="Phei"
+                        className="w-[250px] sm:w-[300px] lg:w-[300px] rounded-lg shadow-lg opacity-50"
+                    />
+                </div>
 
                 <div className="w-full lg:w-1/2 lg:p-8 text-center lg:text-left">
                     <h2 className="text-8xl font-semibold text-white" data-aos="fade-left" data-aos-duration="1500">

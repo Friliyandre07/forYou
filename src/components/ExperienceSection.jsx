@@ -75,7 +75,6 @@ const ExperienceSection = ({ isVisible, onClose }) => {
         background: "linear-gradient(180deg, #0B0B0D 50%, #D85A88 150%)",
       }}
     >
-      {/* Close Button */}
       <div className="absolute top-4 right-4">
         <button
           onClick={onClose}

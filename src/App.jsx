@@ -21,7 +21,6 @@ const App = () => {
       
       {hasTransitionEnded && (
         <>
-          <FireworksEffect />  {/* ✅ Add Fireworks Effect Here */}
 
           <div
             className={`fixed inset-0 h-full w-full transition-opacity duration-1000 ${fadeIn ? "opacity-100" : "opacity-0"}`}
